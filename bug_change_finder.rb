@@ -37,6 +37,9 @@ class ChangelistDetector
     
     FAKED_CHANGELISTS = { 0 => true, 1 => true, 2=> true , 3 => true, 4 =>true, 5=>false, 6=>false, 7=>false }
     
+    # Q: 
+    @head = @tail = 0 ; @mid = nil  # indexes for range of changelists to search
+    
     def initialize()
         changelists = [] # assumably the list should be in ascending order
     end
@@ -46,14 +49,26 @@ class ChangelistDetector
     end
     
     
+    # TODO: cmp with the non-regression one, each debug? 
+    def search_regression(head=nil, tail=nil)
+      condition = true
+      while(condition)
+        # set values
+        # yield value to be changed
+        search_regression(changed)
+      end
+    end
+
     # TODO: more logic here! e.g. quick guess, runtime input, maybe in block
     # NOTE:
     # * do the minimum work except the dependent ones.
-    def search(head=nil, tail=nil )
-        head = 0 unless head # maybe backwards 200 changelists (or of yesterday's qa approved changelist.)
+    # * because the searching range could be changed in the runtime, no need to use as an arguments,
+    #   but requires more logic for jumping around! 
+    def search()
+        #head = 0 unless head # maybe backwards 200 changelists (or of yesterday's qa approved changelist.)
         # tail = changelist.size() - 1
-        tail = 4 unless tail
-        mid = nil
+        # tail = 4 unless tail
+        # mid = nil
         # TODO: ensure the head is ok and tail is not ok, thus search is meaningful!
         while !( (mid == head) or (mid == tail) ) 
             mid = ((head + tail ) / 2 ).round()
@@ -104,6 +119,14 @@ class ChangelistDetector
     alias each_mid dichotomy_search
     
 end  # of class ChangelistDetector
+
+
+# place holder class
+class Symptom
+  attr_accessor :symptoms
+  attr_accessor :deduce_rules
+end
+
 
 
 def locate_error_with_block(range, &block)
@@ -210,12 +233,13 @@ if __FILE__ == $0
 #        mid.comment_check    # see if the changelist has already been detected for having potential bugs, which admin may have commented on.
 #        mid.sanity_check     #  see if +/-10 changelists has someone to override the changelist, by whom may submit a missing file
 #        mid.quick_and_dirty  # any short cut methods.
+#       # I should know each mid is ok or not
 #    end
 # --------------------------------------------------
     
     
 # ------------- client code e.g. 2 -----------------
-#   #SUG: maybe this code is for online 
+#   #SUG: maybe this code is for runtime eval. because the content of the block is always changing!
 #   detector.search() do
 #       # receive env change.
 #   end
