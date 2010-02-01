@@ -1,3 +1,0 @@
-Sorry, I have no idea how to do the swap in python as 
-* there are no public data structure or API dealing with LinkedList.
-* lack of c/c++ competence.
