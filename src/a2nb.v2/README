@@ -1,0 +1,10 @@
+
+This project is designed to refine the process or the code for alice2 project's nightly build process.
+
+Goal,
+* less code, cleaner code
+* less environment dependences/less complex human intervene
+* to incorporate new technologies
+* to make the work as safe as possible.
+
+

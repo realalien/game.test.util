@@ -1,0 +1,13 @@
+
+Why?
+Sometimes the locating an errored changelist(obvious bugs with no blamer) takes quite a lot 
+of time, which may delay the bug fixing and other users. 
+
+So the purpose of the subproject is to find out the errored changelist as fast as possible.
+The features of machine learning, dynamic context changing is highly desirable.
+
+
+
+
+
+

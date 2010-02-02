@@ -1,0 +1,41 @@
+Download the original attachment
+
+Game Programming Test  
+version 1.4.1 
+© CCP hf.
+
+Please take your time and answer each question to the best of your ability.  You have a maximum of 4 hours to complete and return the test – if you haven’t finished all answers that is OK; just send in what you have.  It may be helpful to use a compiler while composing your answers, but it is not necessary.
+
+You may compose your answers in C, C++ or Python. 
+
+Also note that if you feel that you need to make assumptions while answering these questions please state your assumptions.
+
+Good luck! 
+
+Question 1
+
+Write a function to swap two arbitrary elements in a singly-linked list. Assume that you do not have access to the data component of the elements (and thus cannot just swap the data).
+
+Question 2
+
+You are being asked to implement a simple game of dice, where the players are two – a human player and a computer controlled player.  The rules are as follows:
+
+   1. Each player gets one turn.
+   2. On a turn the player rolls two six-sided dice (the human player never enters the dice number directly, the program tells the human player what dice he gets).
+   3. The player wins the round that gets a double (or higher double if both get doubles). If neither player gets a double then the higher total wins.  If they both have the same total then the player with the highest number on a die wins.  If they both rolled the same numbers on their dice then the round is a draw and neither player gets a point.
+   4. On the next game round the two players switch turns, i.e. the second one to roll becomes the first one to roll and vice versa.
+   5. The game rounds continue until the human player decides to quit.
+
+Now, before you go off and implement this game realize there is one catch, the computer player must have a winning average close to 70% but this game of “cheater’s dice” should still appear “almost” random and thus fair to the human player, every time it’s played.
+
+Provide a short description and then implement the game.
+
+Question 3
+
+You have been tasked to implement a weapons system for a new exciting tactical shooter and espionage game, EVE Gear Solid.  The player can acquire different kinds of weapons, such as a hand gun, rifle, crowbar (not very espionage like nor tactical, but our hero really digs the crowbar) and a knife.  The firearms can be loaded with ammo and the ammo isn’t homogenous, i.e. hand gun ammo only works with the hand guns.  On top of that you have different kinds of ammo per firearm, for instance hollow point and armor piercing ammo for the rifle.  A firearm can be fitted with a silencer, which again is tied to the firearm type (cannot put rifle silencer on hand gun). 
+
+Decompose this project into classes and objects and provide a detailed description.
+
+Implement the Fire method (in the case of a knife or a crowbar this means throwing said weapons) – the characteristics of firing that we care about are the sound made by launching the projectile, the projectile produced (if any – depends on having ammo in the case of a firearm), the speed, range, and direction of the projectile.
+
+Note that the sound is a combination of the weapon used, silencer (if applicable) and ammo type (if applicable).  The speed and range are a combination of weapon used and ammo type (if applicable). 

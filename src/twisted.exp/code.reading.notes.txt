@@ -1,0 +1,50 @@
+
+2010/2/1
+* not found any factory in buildbot start method call chain. AND 
+  Q: what's the protocol used  Q: how the reactor.run without any info about the port and factory?
+  Q:  Why buildbot has no factory-specific configuration of the protocols
+
+  
+  * FOR FUN: write a client to grabbing data constantly from douban to collect data.
+  
+  * Q: doc.p.18, did not find  any IProtocol class, is it a API change?
+  
+  
+2010/2/2
+* Twisted doc, p.17, we have in class LogBotFactory, how did the class know  about the reactor
+  and even call reactor.stop()?
+ 
+* ESP. it takes time to get to know about Twisted details, 
+  HINT &. TODO: most part of the Buildbot can be reused, so I think the easy way to get a 
+        task done is rewriting the master side logic!
+        
+* Notes:
+  
+  
+ * in service.py, line 276/271, in the class MultiService(Service):
+ 	Service.privilegedStartService(self)
+ Q: what's the use of call super class's empty method 
+ 	and even iterate over self in the next line of code?
+ A: 
+ 
+ * TODO:research in debugging, what should be in the cfg file,
+     we not listen to the source change.
+     
+     
+ 
+ * IDEA: ideally, the detecting of buggy changelist should incorporate
+    code with following functions, 
+    e.g. receieve detailed/helpful info from reporters, to narrow
+        down the range of changelist number
+    e.g. inform the maintainer there is an alternative, like debugging
+        by a dedicated programmer, it could be the best way of locating
+        error
+    e.g.  keep word search with error report and changelist description
+    
+    e.g. narrow the changelist selection by distribution of CL made by 
+    	programmer, even depends on the content of CL, only UC or cpp?
+    
+    
+    e.g. *** use pattern to apply different strategies in different 
+     situasion. ( e.g. 1d back, 1 wk back, 1 mth back, .5 mth back checking)
+     
