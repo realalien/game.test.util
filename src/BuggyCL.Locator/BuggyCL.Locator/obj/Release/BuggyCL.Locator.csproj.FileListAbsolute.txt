@@ -1,0 +1,8 @@
+D:\zjc\wr2\game.dev.hacks\src\BuggyCL.Locator\BuggyCL.Locator\bin\Release\BuggyCL.Locator.exe
+D:\zjc\wr2\game.dev.hacks\src\BuggyCL.Locator\BuggyCL.Locator\bin\Release\BuggyCL.Locator.pdb
+D:\zjc\wr2\game.dev.hacks\src\BuggyCL.Locator\BuggyCL.Locator\obj\Release\ResolveAssemblyReference.cache
+D:\zjc\wr2\game.dev.hacks\src\BuggyCL.Locator\BuggyCL.Locator\obj\Release\BuggyCL.Locator.Form1.resources
+D:\zjc\wr2\game.dev.hacks\src\BuggyCL.Locator\BuggyCL.Locator\obj\Release\BuggyCL.Locator.Properties.Resources.resources
+D:\zjc\wr2\game.dev.hacks\src\BuggyCL.Locator\BuggyCL.Locator\obj\Release\BuggyCL.Locator.csproj.GenerateResource.Cache
+D:\zjc\wr2\game.dev.hacks\src\BuggyCL.Locator\BuggyCL.Locator\obj\Release\BuggyCL.Locator.exe
+D:\zjc\wr2\game.dev.hacks\src\BuggyCL.Locator\BuggyCL.Locator\obj\Release\BuggyCL.Locator.pdb
