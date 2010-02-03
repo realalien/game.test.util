@@ -48,3 +48,21 @@
     e.g. *** use pattern to apply different strategies in different 
      situasion. ( e.g. 1d back, 1 wk back, 1 mth back, .5 mth back checking)
      
+2010/02/03
+* I think the new 'detector master' and 'detector slaves' should NOT 
+  mingle with the other existing master and slaves, though the steps
+  may be reused in locating buggy changelists.
+  
+× MOD HISTORY
+  >>> runner.py  (facilities for create instances)--  Options,  
+  >>> changes.py	(replacing ChangeMaster with master that grab all 
+     changes at once, no need to periodically get new change.)
+      --->  changes.* may be also rewrite.
+* UI part
+  ------------------------------------------------------------
+  |  CL#1   |	CL#2	|	...		|	CL#n  
+  |			|			|			|   
+  ------------------------------------------------------------
+  |	arrow-up							arrow-up
+  |  slave#1							 slave#2
+  ------------------------------------------------------------
