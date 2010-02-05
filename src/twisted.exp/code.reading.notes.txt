@@ -66,3 +66,35 @@
   |	arrow-up							arrow-up
   |  slave#1							 slave#2
   ------------------------------------------------------------
+  
+  
+  
+2010/02/04
+* TODO: the TotalChangeMaster may require loading previous changelists
+		using cPickle and merging new changelists, test out the perfo-
+		rmance.
+
+* TODO: see if or how to runtime inspect on Buildbot internals.
+
+
+* Q: the BuggyChangelistDetector should not be fed with master.cfg
+     but preferably, a 
+  
+  
+
+
+2010/02/05
+* IDEA:  I think there is no need to create a DetectorMaster configuration
+   because the master info. can be always on-the-fly. 
+
+
+* TASK: make enlarge/dis-enlarge widget.
+
+* TODO: reading
+Concurrency with Python, Twisted, and Flex
+http://www.artima.com/weblogs/viewpost.jsp?thread=230001
+http://code.google.com/p/amfast/wiki/PyAmfExample
+
+
+
+  
